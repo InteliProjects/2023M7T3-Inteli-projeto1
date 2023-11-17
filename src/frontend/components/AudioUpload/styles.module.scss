@@ -1,0 +1,70 @@
+.form{
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.upload {
+  position: relative;
+  width: 280px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px dashed #f88821;
+  border-collapse: separate;
+  height: 100px;
+
+  input[type='file'] {
+    display: none;
+  }
+
+  label {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 40px 0;
+    cursor: pointer;
+  }
+
+  div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        scale: 1.05;
+      }
+    }
+  }
+
+  .uploaded {
+    color: var(--secondary-2);
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.submit {
+  border-radius: 8px;
+  width: 100px;
+  padding: 4px 12px;
+  border: none;
+  background-color: #F88821;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    scale: 1.05;
+  }
+}
